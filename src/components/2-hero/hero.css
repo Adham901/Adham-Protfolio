@@ -1,0 +1,159 @@
+/* ===========================
+ table of contents
+==============================
+1. Left Section
+2. Right Section ==> animation*/
+
+section.hero {
+    margin-top: 3rem;
+  }
+  
+  /* ========================
+      1. Left Section
+  =========================== */
+  section.hero .parent-avatar.flex {
+    align-items: end;
+    gap: 0.6rem;
+    min-height: 88px;
+  }
+  
+  section.hero .left-section {
+    flex-grow: 1;
+  }
+  
+  section.hero .icon-verified {
+    color: var(--blue);
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+
+
+  
+  
+  section.hero .avatar {
+    width: 88px;
+  
+    border-radius: 50%;
+    border: 1px solid darkorange;
+    padding: 1px;
+    box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.586) inset;
+  }
+  
+  section.hero h2.title {
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    margin-top: 24px ;
+    color: var(--title);
+  }
+  
+  section.hero p.sub-title {
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    line-height: 1.65rem;
+    margin-bottom: 32px;
+  }
+  
+  section.hero .all-icons {
+    font-size: 1.3rem;
+    gap: 1.5rem;
+    color: var(--subtitle);
+  }
+  
+  section.hero .all-icons .icon:hover {
+    font-size: 1.4rem;
+    transition: 0.3s;
+    cursor: pointer;
+    color: var(--icon-hover);
+  }
+  
+  /* ===================================
+      2. Right Section ==> animation
+  ====================================== */
+  section.hero .animation {
+    width: 100%;
+    translate: 100px 55px;
+  }
+
+
+  .btn-cv{
+
+        left: 410px;
+    /* CSS */
+   
+      --glow-color: rgb(177, 133, 219);
+      --glow-spread-color: rgba(191, 123, 255, 0.781);
+      --enhanced-glow-color: rgb(231, 206, 255);
+      --btn-color: rgb(100, 61, 136);
+      border: .25em solid var(--glow-color);
+      padding: 1em 3em;
+      color: var(--glow-color);
+      font-size: 15px;
+      font-weight: bold;
+      background-color: var(--btn-color);
+      border-radius: 1em;
+      outline: none;
+      margin-top: 18px;
+      box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 4em 1em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+      text-shadow: 0 0 .5em var(--glow-color);
+      position: relative;
+      transition: all 0.3s;
+      }
+    
+    .btn-cv::after {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      top: 120%;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--glow-spread-color);
+      filter: blur(2em);
+      opacity: .7;
+      transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+    }
+    
+    .btn-cv:hover {
+      color: var(--btn-color);
+      background-color: var(--glow-color);
+      box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 4em 2em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+    }
+    
+    .btn-cv:active {
+      box-shadow: 0 0 0.6em .25em var(--glow-color),
+            0 0 2.5em 2em var(--glow-spread-color),
+            inset 0 0 .5em .25em var(--glow-color);
+    }
+    
+
+
+.btn-cv:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+
+  
+  
+  @media (max-width: 1250px) {
+    section.hero .animation {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+   .btn-cv{
+
+    left:0px;
+   }
+   .sub-title{
+    width: 50%;
+   }
+
+
+  }
